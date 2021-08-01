@@ -1,0 +1,14 @@
+
+.nothing__content-main {
+    background-color: $primary;
+    height: 100vh;
+    color: $white;
+
+    @include d-flex( center, center );
+    flex-direction: column;
+
+    & p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}

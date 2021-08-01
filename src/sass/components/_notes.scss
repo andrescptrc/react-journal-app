@@ -1,0 +1,48 @@
+
+.notes__app-bar {
+    background-color: $primary;
+    @include d-flex( space-between, center );
+    padding: 10px 10px;
+
+    & span {
+        color: $white;
+    }
+}
+
+.notes__main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.notes__content { 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.notes__title-input,
+.notes__body-textarea {
+    border: none;
+    outline: none;
+    padding: 20px 20px;
+    width: 100%;
+} 
+
+.notes__title-input {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.notes__body-textarea {
+    font-size: 20px;   
+    padding-top: 0;
+    resize: none;   
+    flex: 1 1 auto;
+}
+
+.notes__image img {
+    height: 150px;
+    box-shadow: 5px 5px $dark-grey;
+    margin: 0 0 20px 20px;
+}
